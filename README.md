@@ -5,7 +5,7 @@ Real Time Url Filtering
 
 This Project has been done by Ben Nageris and Yoav Magid as part of our final project in College.
 
-In Order to run this code efficiently you would need to replace:
+In order to run this code efficiently you would need to replace:
 
 <ENTER_YOUR_SERVER_ADDRESS> = 'Url_Filtering_Server' Domain Name
 
