@@ -1,0 +1,3 @@
+C:\Users\yoavm\Desktop\project_server\Url_Filtering_Server\obj\Debug\FromExistingCode4.njsprojAssemblyReference.cache
+C:\Users\yoavm\Desktop\project_server\Url_Filtering_Server\obj\Debug\FromExistingCode4.njsproj.CoreCompileInputs.cache
+C:\Users\yoavm\Desktop\project_server\Url_Filtering_Server\bin\Microsoft.NodejsTools.WebRole.dll

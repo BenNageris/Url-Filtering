@@ -1,0 +1,237 @@
+﻿doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Freelancer - Start Bootstrap Theme
+    // Bootstrap core CSS
+    link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    // Plugin CSS
+    link(href='/vendor/magnific-popup/magnific-popup.css', rel='stylesheet', type='text/css')
+    // Custom styles for this template
+    link(href='/stylesheets/freelancer.min.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+  body#page-top
+    nav#mainNav.navbar.navbar-expand-lg.bg-secondary.fixed-top.text-uppercase
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') URL Filtering
+        button.navbar-toggler.navbar-toggler-right.text-uppercase.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fa.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.mx-0.mx-lg-1
+              a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Features
+            li.nav-item.mx-0.mx-lg-1
+              a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') About
+            li.nav-item.mx-0.mx-lg-1
+              a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(onclick="document.getElementById('id01').style.display='block'", style='width:auto;') Login
+            li.nav-item.mx-0.mx-lg-1
+              a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#register') Register
+    // Header
+    header.masthead.bg-primary.text-white.text-center
+      .container
+        img.img-fluid.mb-5.d-block.mx-auto(height='256', width='256', src='images/productlogo.png', alt='')
+        h1.text-uppercase.mb-0 Real Time URL Filtering
+        hr.star-light
+        h2.font-weight-light.mb-0 ALWAYS PROTECTS YOUR CHILD
+    // Portfolio Grid Section
+    section#portfolio.portfolio
+      .container
+        h2.text-center.text-uppercase.text-secondary.mb-0 Features
+        hr.star-dark.mb-5
+        .row
+          .col-md-6.col-lg-4
+            a.portfolio-item.d-block.mx-auto(href='#portfolio-modal-1')
+              .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+                .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+                  i.fa.fa-search-plus.fa-3x
+              img.img-fluid(height='350', width='350', src='images/portfolio/18plus.png', alt='')
+          .col-md-6.col-lg-4
+            a.portfolio-item.d-block.mx-auto(href='#portfolio-modal-2')
+              .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+                .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+                  i.fa.fa-search-plus.fa-3x
+              img.img-fluid(height='350', width='350', src='images/portfolio/circle.jpg', alt='')
+          .col-md-6.col-lg-4
+            a.portfolio-item.d-block.mx-auto(href='#portfolio-modal-3')
+              .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+                .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+                  i.fa.fa-search-plus.fa-3x
+              img.img-fluid(height='350', width='350', src='images/portfolio/gambling.jpg', alt='')
+    // About Section
+    section#about.bg-primary.text-white.mb-0
+      .container
+        h2.text-center.text-uppercase.text-white About
+        hr.star-light.mb-5
+        .row
+          .col-lg-4.ml-auto
+            p.lead
+              | URL Filtering is software that restricts or controls the content an Internet user is capable to access, especially when utilised to restrict material delivered over the Internet via the Web, e-mail, or other means. Content-control software determines what content will be available or be blocked.
+          .col-lg-4.mr-auto
+            p.lead
+              | Our URL Filtering solution is unique due to using advanced text modelling & artificial intellegence in order to categorize the website's content and to block it when it meets classification blocking requirements.
+        .text-center.mt-4
+          a.btn.btn-xl.btn-outline-light(href='#')
+            i.fa.fa-download.mr-2
+            |             Download Now!
+    // Contact Section
+    section#register
+      .container
+        h2.text-center.text-uppercase.text-secondary.mb-0 Register
+        hr.star-dark.mb-5
+        .row
+          .col-lg-8.mx-auto
+            form#contactForm(name='sentMessage', novalidate='novalidate',method='POST', action='/reg')
+              .control-group
+                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                  label Name
+                  input#username.form-control(type='Username',name='username', placeholder='Name', required='required', data-validation-required-message='Please enter your name.')
+                  p.help-block.text-danger
+              .control-group
+                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                  label Email Address
+                  input#email.form-control(type='email',name='email', placeholder='Email Address', required='required', data-validation-required-message='Please enter your email address.')
+                  p.help-block.text-danger
+              .control-group
+                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                  label Password
+                  input#password.form-control(type='password',name='password', placeholder='password', required='required', data-validation-required-message='Please enter your password.')
+                  p.help-block.text-danger
+              br
+              #success
+              .form-group
+                button#sendMessageButton.btn.btn-primary.btn-xl(type='submit') Send
+    // Footer
+    footer.footer.text-center
+      .container
+        .row
+          .col-md-4.mb-5.mb-lg-0
+            h4.text-uppercase.mb-4 Location
+            p.lead.mb-0
+              | 2215 John Daniel Drive
+              br
+              | Clark, MO 65243
+          .col-md-4.mb-5.mb-lg-0
+            h4.text-uppercase.mb-4 Around the Web
+            ul.list-inline.mb-0
+              li.list-inline-item
+                a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='#')
+                  i.fa.fa-fw.fa-facebook
+              li.list-inline-item
+                a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='#')
+                  i.fa.fa-fw.fa-google-plus
+              li.list-inline-item
+                a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='#')
+                  i.fa.fa-fw.fa-twitter
+              li.list-inline-item
+                a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='#')
+                  i.fa.fa-fw.fa-linkedin
+              li.list-inline-item
+                a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='#')
+                  i.fa.fa-fw.fa-dribbble
+          .col-md-4
+            h4.text-uppercase.mb-4 About Freelancer
+            p.lead.mb-0
+              | Freelance is a free to use, open source Bootstrap theme created by
+              a(href='http://startbootstrap.com') Start Bootstrap
+              | .
+    .copyright.py-4.text-center.text-white
+      .container
+        small Copyright © Your Website 2018
+    // Scroll to Top Button (Only visible on small and extra-small screen sizes)
+    .scroll-to-top.d-lg-none.position-fixed
+      a.js-scroll-trigger.d-block.text-center.text-white.rounded(href='#page-top')
+        i.fa.fa-chevron-up
+    // Portfolio Modals
+    // Portfolio Modal 1
+    #portfolio-modal-1.portfolio-modal.mfp-hide
+      .portfolio-modal-dialog.bg-white
+        a.close-button.d-none.d-md-block.portfolio-modal-dismiss(href='#')
+          i.fa.fa-3x.fa-times
+        .container.text-center
+          .row
+            .col-lg-8.mx-auto
+              h2.text-secondary.text-uppercase.mb-0 Adult Content Filter
+              hr.star-dark.mb-5
+              img.img-fluid.mb-5(height='75', width='75', src='images/portfolio/18plus.png', alt='')
+              p.mb-5
+                | Block Your child from watching adult's content sites using our advanced text modelling algorithms.
+              a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss(href='#')
+                i.fa.fa-close
+                |                 Close Filter
+    // Portfolio Modal 2
+    #portfolio-modal-2.portfolio-modal.mfp-hide
+      .portfolio-modal-dialog.bg-white
+        a.close-button.d-none.d-md-block.portfolio-modal-dismiss(href='#')
+          i.fa.fa-3x.fa-times
+        .container.text-center
+          .row
+            .col-lg-8.mx-auto
+              h2.text-secondary.text-uppercase.mb-0 Full Security Filter
+              hr.star-dark.mb-5
+              img.img-fluid.mb-5(height='75', width='75', src='images/portfolio/circle.jpg', alt='')
+              p.mb-5
+                | Apply Full Security Filter to maximize your child protection from Gambling & Adult content through
+                | browsing experience online.
+              a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss(href='#')
+                i.fa.fa-close
+                |                 Close Filter
+    // Portfolio Modal 3
+    #portfolio-modal-3.portfolio-modal.mfp-hide
+      .portfolio-modal-dialog.bg-white
+        a.close-button.d-none.d-md-block.portfolio-modal-dismiss(href='#')
+          i.fa.fa-3x.fa-times
+        .container.text-center
+          .row
+            .col-lg-8.mx-auto
+              h2.text-secondary.text-uppercase.mb-0 Gambling Content Filter
+              hr.star-dark.mb-5
+              img.img-fluid.mb-5(height='75', width='75', src='images/portfolio/gambling.jpg', alt='')
+              p.mb-5
+                | Block Your child from watching gambling sites & content using our advanced text modelling algorithms.
+              a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss(href='#')
+                i.fa.fa-close
+                |                 Close Filter
+    #id01.modal
+      form.modal-content.animate(method='POST', action='/login')
+        .container
+          label(for='uname')
+            b Username
+          input#name.form-control(type='text', name='username', placeholder='Username', required='required', data-validation-required-message='Please enter your name.')
+          label(for='psw')
+            b Password
+          input#password.form-control(type='password', name='password', placeholder='Password', required='required', data-validation-required-message='Please enter your password.')
+          button(type='submit') Login
+          label
+            input(type='checkbox', checked='checked', name='remember')
+            |  Remember me
+        .container(style='background-color:#f1f1f1;')
+          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+          span.psw
+            | Forgot 
+            a(href='#') password?
+    // for the login page
+    script.
+      var modal = document.getElementById('id01');
+      window.onclick = function(event) {
+      if (event.target == modal) {
+      modal.style.display = "none";
+      }
+      }
+    // Bootstrap core JavaScript
+    script(src='/vendor/jquery/jquery.min.js')
+    script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
+    // Plugin JavaScript
+    script(src='/vendor/jquery-easing/jquery.easing.min.js')
+    script(src='/vendor/magnific-popup/jquery.magnific-popup.min.js')
+    // Contact Form JavaScript
+    script(src='js/jqBootstrapValidation.js')
+    // Custom scripts for this template
+    script(src='js/freelancer.min.js')

@@ -1,0 +1,2 @@
+C:\Users\yoavm\source\repos\Url_Filtering_Server\Url_Filtering_Server\obj\Debug\Url_Filtering_Server.njsproj.CoreCompileInputs.cache
+C:\Users\yoavm\source\repos\Url_Filtering_Server\Url_Filtering_Server\bin\Microsoft.NodejsTools.WebRole.dll

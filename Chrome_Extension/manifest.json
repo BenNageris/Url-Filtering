@@ -1,0 +1,15 @@
+{
+  "name": "URL FILTERING",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Real Time Url Filtering",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  //"content_security_policy": "script-src 'unsafe-inline' *; object-src 'self'",
+  "background": {
+    "scripts": [ "popup.js" ],
+    "persistent": true
+  },
+  "permissions": [ "storage", "tabs", "<all_urls>", "webNavigation", "webRequest", "*://*/*", "webRequestBlocking" ]
+}

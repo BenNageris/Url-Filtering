@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Freelancer - Start Bootstrap Theme
+    // Bootstrap core CSS
+    link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    // Plugin CSS
+    link(href='/vendor/magnific-popup/magnific-popup.css', rel='stylesheet', type='text/css')
+    // Custom styles for this template
+    link(href='/stylesheets/freelancer.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+  body#page-top
+    nav#mainNav.navbar.navbar-expand-lg.bg-secondary.fixed-top.text-uppercase
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') URL Filtering
+        button.navbar-toggler.navbar-toggler-right.text-uppercase.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fa.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.mx-0.mx-lg-1
+             button.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger.back.bg-secondary.text-left.text-uppercase.text-white(type='submit',name="submit",value='addDomain') #{Parent}
+            li.nav-item.mx-0.mx-lg-1
+              form(action='/logout',method='POST') 
+                button.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger.back.text-left.text-uppercase.text-white(type='submit',name="submit",value='addDomain') Logout
+    header.paddingtop.bg-primary.text-white.text-center
+      .container
+        h1.text-uppercase.mb-0 USERS MANAGEMENT
+    div.bg-primary
+      .container
+        h6.text-left.text-white.text-uppercase The child #{Child} of the parent #{Parent} was successfully #{Operation}
+        div
+
+        .container#about.bg-primary.text-white
+            center
+                form(action='/return',method='POST')
+                  button.smallbuttonwidth.bg-secondary(type='submit',name="return") return 
+                  br

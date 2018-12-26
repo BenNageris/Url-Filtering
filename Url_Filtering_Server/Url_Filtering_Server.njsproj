@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Url_Filtering_Server</Name>
+    <RootNamespace>Url_Filtering_Server</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3d71296e-5bc3-4857-a79b-75fc4ee5fbd1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="models\Parent.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\Word.js" />
+    <Compile Include="public\js\contact_me.js" />
+    <Compile Include="public\js\contact_me.min.js" />
+    <Compile Include="public\js\freelancer.js" />
+    <Compile Include="public\js\freelancer.min.js" />
+    <Compile Include="public\js\injected.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\jqBootstrapValidation.js" />
+    <Compile Include="public\js\jqBootstrapValidation.min.js" />
+    <Compile Include="public\js\sendToCloud.js" />
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.js" />
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.min.js" />
+    <Compile Include="public\vendor\jquery-easing\jquery.cookie.js" />
+    <Compile Include="public\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Compile Include="public\vendor\jquery-easing\jquery.easing.js" />
+    <Compile Include="public\vendor\jquery-easing\jquery.easing.min.js" />
+    <Compile Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\Gruntfile.js" />
+    <Compile Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\jquery.cookie.js" />
+    <Compile Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\test\server.js" />
+    <Compile Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\test\tests.js" />
+    <Compile Include="public\vendor\jquery\jquery.cookie.js" />
+    <Compile Include="public\vendor\jquery\jquery.js" />
+    <Compile Include="public\vendor\jquery\jquery.min.js" />
+    <Compile Include="public\vendor\jquery\jquery.slim.js" />
+    <Compile Include="public\vendor\jquery\jquery.slim.min.js" />
+    <Compile Include="public\vendor\magnific-popup\jquery.magnific-popup.js" />
+    <Compile Include="public\vendor\magnific-popup\jquery.magnific-popup.min.js" />
+    <Compile Include="routes\api.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\parents.js" />
+    <Content Include="package.json" />
+    <Content Include="public\images\portfolio\18plus.png" />
+    <Content Include="public\images\portfolio\addDomain.png" />
+    <Content Include="public\images\portfolio\circle.jpg" />
+    <Content Include="public\images\portfolio\circus.png" />
+    <Content Include="public\images\portfolio\gambling.jpg" />
+    <Content Include="public\images\portfolio\game.png" />
+    <Content Include="public\images\portfolio\maflock.png" />
+    <Content Include="public\images\portfolio\mag.jpg" />
+    <Content Include="public\images\portfolio\magnifyingglasslock.jpg" />
+    <Content Include="public\images\portfolio\removeDomain.png" />
+    <Content Include="public\images\portfolio\safe.png" />
+    <Content Include="public\images\portfolio\submarine.png" />
+    <Content Include="public\images\portfolio\_gambling.jpg" />
+    <Content Include="public\images\productlogo.png" />
+    <Content Include="public\images\profile.png" />
+    <Content Include="public\stylesheets\freelancer.css" />
+    <Content Include="public\stylesheets\freelancer.min.css" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="public\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="public\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="public\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="public\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="public\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="public\vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="public\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="public\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="public\vendor\font-awesome\less\animated.less" />
+    <Content Include="public\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="public\vendor\font-awesome\less\core.less" />
+    <Content Include="public\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="public\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="public\vendor\font-awesome\less\icons.less" />
+    <Content Include="public\vendor\font-awesome\less\larger.less" />
+    <Content Include="public\vendor\font-awesome\less\list.less" />
+    <Content Include="public\vendor\font-awesome\less\mixins.less" />
+    <Content Include="public\vendor\font-awesome\less\path.less" />
+    <Content Include="public\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="public\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="public\vendor\font-awesome\less\stacked.less" />
+    <Content Include="public\vendor\font-awesome\less\variables.less" />
+    <Content Include="public\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="public\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\bower.json" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\CHANGELOG.md" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\component.json" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\CONTRIBUTING.md" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\cookie.jquery.json" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\MIT-LICENSE.txt" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\package.json" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\README.md" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\test\index.html" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\test\malformed_cookie.html" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\_gitignore" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\_jshintrc" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\_tm_properties" />
+    <Content Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\_travis.yml" />
+    <Content Include="public\vendor\jquery\jquery.min.map" />
+    <Content Include="public\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="public\vendor\magnific-popup\magnific-popup.css" />
+    <Content Include="README.md" />
+    <Content Include=".env" />
+    <Content Include="views\addRemoveDomainSuccess.pug" />
+    <Content Include="views\addRemoveSucess.pug" />
+    <Content Include="views\childs.pug" />
+    <Content Include="views\describederror.pug" />
+    <Content Include="views\extensionShowChilds.pug" />
+    <Content Include="views\Home.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+    <Content Include="views\selectAddRemoveChild.pug" />
+    <Content Include="views\selectAddRemoveDomain.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\portfolio\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\vendor\" />
+    <Folder Include="public\vendor\bootstrap\" />
+    <Folder Include="public\vendor\bootstrap\css\" />
+    <Folder Include="public\vendor\bootstrap\js\" />
+    <Folder Include="public\vendor\font-awesome\" />
+    <Folder Include="public\vendor\font-awesome\css\" />
+    <Folder Include="public\vendor\font-awesome\fonts\" />
+    <Folder Include="public\vendor\font-awesome\less\" />
+    <Folder Include="public\vendor\font-awesome\scss\" />
+    <Folder Include="public\vendor\jquery-easing\" />
+    <Folder Include="public\vendor\jquery\" />
+    <Folder Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\" />
+    <Folder Include="public\vendor\jquery\carhartl-jquery-cookie-92b7715\test\" />
+    <Folder Include="public\vendor\magnific-popup\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

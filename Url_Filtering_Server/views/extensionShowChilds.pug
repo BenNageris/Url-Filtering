@@ -1,0 +1,41 @@
+html
+  head
+    //link#bootstrap-css(src='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+    //link#bootstrap-css(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', rel='stylesheet')
+    //script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js')
+    //script(src='http://code.jquery.com/jquery-1.11.1.min.js')
+    // ---- Include the above in your HEAD tag --------
+    style.
+      i {
+      vertical-align: middle;
+      }
+      .table-users tbody tr:hover {
+      cursor: pointer;
+      background-color: #eee;
+      }
+      .nav-user-photo {
+      vertical-align: middle;
+      }
+      .user_panel {
+      width: 50%;
+      }
+    script(src='https://use.fontawesome.com/1e803d693b.js')
+  body
+    .container
+      .row
+        .panel.panel-default.user_panel
+          .panel-heading
+            h3.panel-title #{Parent}'s childs
+          .panel-body
+            .table-container
+              table.table-users.table(border='0')
+                tbody
+                each child in Children
+                  tr(id=''+child.name)
+                    //td(width='10', align='center')
+                      i.fa.fa-2x.fa-user.fw
+                    td
+                      | #{child.name}
+                      br
+                      i.fa.fa-envelope
+                    
