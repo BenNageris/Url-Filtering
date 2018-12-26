@@ -3,7 +3,7 @@
 Real Time Url Filtering
 
 
-This project has been done by Ben Nageris and Yoav Magid as part of our final project in College.
+This project has been done by Ben Nageris and Yoav Magid as part of our final project in Netanya Academic College.
 
 In order to run this code you would need to replace:
 
