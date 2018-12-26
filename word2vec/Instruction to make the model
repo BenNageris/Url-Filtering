@@ -1,0 +1,6 @@
+In order to create the vector model please follow instructions in:
+
+https://textminingonline.com/training-word2vec-model-on-english-wikipedia-by-gensim
+
+
+Of course you are not obligated to use all wikipedia dump file for training, but this is what we have done and fully reccomend
